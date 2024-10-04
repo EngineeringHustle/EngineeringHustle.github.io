@@ -36,13 +36,21 @@ button:hover {
 	top: 20px;
 	right: 30px;
 	*/
-	margin: 0 20px 20px 0;
+	margin: 10px 20px 20px 10px;
 }
 
 p {
 	color: #000000;
 	text-align: justify;
 	/*text-indent: 2em;*/
+}
+
+code{
+	font-family: Consolas,"courier new";
+	color: crimson;
+	background-color: #f1f1f1;
+	padding: 2px;
+  	font-size: 105%;
 }
 
 

@@ -7,12 +7,93 @@
     <title>Engineering Hustle</title>
   </head>
   <body>
+
+	<img src="Images/Logo.png" alt="Logo" class = "logo">
+
+	<h1> Engineering Hustle</h1>
+	<time datetime="2024-10-04">September 4, 2024</time>
+	
     <p>Welcome to my new <strong>Engineering Hustle</strong> page. This is a page I use for learing how to develop a webpage. 
-		In the future I might include a technical blog about my projects or cool animations.</p>
+		In the future I might include a <em>technical blog about my projects</em> or cool animations.</p>
 	
 	<p>	Don't expect a lot from it, since it is a testing space! </p>
 
-	<img src="Images/Logo.png" alt="Logo" class = "logo">
+
+	<p>Various power electronic topologies exist and the selection depends on different requirements
+	like:</p>
+
+	<ul>
+		<li>Input voltage</li>
+		<li>Output voltage</li>
+		<li>Power</li>
+		<li>Insulation</li>
+		<li>Size</li>
+		<li>EMC</li>
+		<li>Efficiency</li>
+		<li>Costs .</li>
+	</ul>
+
+	<h2> Control of SMPS</h2>
+
+	<p> SMPS <em>require</em> the <i>output voltage</i> to be stable. <strong>High disturbances</strong>  and 
+		<strong>variations</strong> in the input voltage
+		and component tolerances should be <b>compensated</b>. Therefore, the output voltage is measured and
+		compensated. This feedback control needs to be designed properly, for obtaining a stable system.
+		Figure 1.6 shows a buck converter with a simplified analog voltage feedback control. The output
+		voltage is measured with a voltage divider Rf b<sub>1</sub> and Rf b2. It is compared to the reference voltage
+		Vre f with the usage of an operational amplifier and compensated with Rcomp, Ccomp1 and Ccomp<sup>2</sup>.
+		For obtaining a pulse width signal, the compensated deviation is compared to a sawtooth waveform.
+		When the output of Ucomp is higher than the generated voltage GPWM, the output on Ucomp is high.
+		This changes the semiconductor into the Q into the conducting state until it is turned off due to the
+		Ucomp output being below the PWM generation voltage. Figure 1.4 already showed the waveforms
+		for a buck converter with a fixed duty cycle. With a feedback, the duty cycle D is automatically
+		adjusted to obtain a stable output voltage. An introduction on how the feedback is designed, is
+		presented in a later chapter.
+	</p>
+
+	<p> In contrast to an analog controlled SMPS, digital systems use microcontroller units (MCUs), digital
+		signal processors (DSPs) or field programmable gate arrays (FPGAs) to control the system. The
+		voltage and/or current is measured with a voltage divider and then digitized with an ADC converter. A timediscrete
+		feedback controller is applied inside the digital system and a PWM is generated on the
+		output. <q>If you are able to develop an analog feedback, you can do it digitally with a bit of embedded software skills.</q>
+		For the digital compensation we need some code <code>Digital Compensation</code>.
+	</p>
+
+	<p>
+		Using linebreak<br>
+		<pre>
+			And as typed
+						in html
+		 as it's typed
+		in html.
+		</pre>
+	</p>
+
+
+	<blockquote>
+	<p>The best is to use the least complex solution, even though engineers like to have fun with complex projects.</p>
+
+	<cite>Said by someone.</cite>
+	</blockquote>
+
+	<p> Here is a ordered list:	</p>
+	<ol>
+		<li> Item 1</li>
+		<li> Item 2</li>
+		<li> Item 3</li>
+	</ol>
+	
+	<p>Definition List:</p>
+	
+	<dl>
+		<dt>term</dt>
+			<dd>definition</dd>
+			<dd>additional definition</dd>
+		<dt>term 2</dt>
+			<dd>definition</dd>
+		<dt>term 3</dt>	
+			<dd>definition of term 3</dd>
+	</dl>
 
 	<button class = "clickme"> Click me! </button>
 	
@@ -23,6 +104,9 @@
 		
 		<p>Click again. and the text will hide!</p>
 	</section>
+
+	<br>
+	<small>Copyright Engieering Hustle</small>
 
 	<script src=script.js></script>
   </body>
