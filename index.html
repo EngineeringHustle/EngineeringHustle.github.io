@@ -1,112 +1,319 @@
 <!doctype html>
-<html>
-<link rel="stylesheet" href="style.css">
+<html lang="en-US" dir="lrt">
+
 
   <head>
 	<link rel="icon" type="image/png" href="Images/Favicon.png">
-    <title>Engineering Hustle</title>
+	<meta charset="UTF-8">
+	<title>Engineering Hustle</title>
+
+	<!-- Tells the browser that it is a responsive webpage fit for small and big screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meat name="description" content="Test webpage for getting the skill of website design. See the real page in the future on engineeringhustle.com">
+
+	<link rel="stylesheet" href="style.css">
+	
   </head>
+
   <body>
 
-	<img src="Images/Logo.png" alt="Logo" class = "logo">
+	<header>
+		<img src="Images/Logo.svg" alt="Logo" class = "logo" width="375" height="192">
 
-	<h1> Engineering Hustle</h1>
-	<time datetime="2024-10-04">September 4, 2024</time>
-	
-    <p>Welcome to my new <strong>Engineering Hustle</strong> page. This is a page I use for learing how to develop a webpage. 
-		In the future I might include a <em>technical blog about my projects</em> or cool animations.</p>
-	
-	<p>	Don't expect a lot from it, since it is a testing space! </p>
+		<h1 class="headline"> Engineering Hustle</h1>
+		<time datetime="2024-10-04">September 4, 2024</time>
 
+		<nav role="navigation" aria-label="main menu">
+			<ul class="navbar">
+				<li><a href="index.html"> Home </a> </li>
+				<li><a href="/knowledge">Knowledge</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<p>Various power electronic topologies exist and the selection depends on different requirements
-	like:</p>
-
-	<ul>
-		<li>Input voltage</li>
-		<li>Output voltage</li>
-		<li>Power</li>
-		<li>Insulation</li>
-		<li>Size</li>
-		<li>EMC</li>
-		<li>Efficiency</li>
-		<li>Costs .</li>
-	</ul>
-
-	<h2> Control of SMPS</h2>
-
-	<p> SMPS <em>require</em> the <i>output voltage</i> to be stable. <strong>High disturbances</strong>  and 
-		<strong>variations</strong> in the input voltage
-		and component tolerances should be <b>compensated</b>. Therefore, the output voltage is measured and
-		compensated. This feedback control needs to be designed properly, for obtaining a stable system.
-		Figure 1.6 shows a buck converter with a simplified analog voltage feedback control. The output
-		voltage is measured with a voltage divider Rf b<sub>1</sub> and Rf b2. It is compared to the reference voltage
-		Vre f with the usage of an operational amplifier and compensated with Rcomp, Ccomp1 and Ccomp<sup>2</sup>.
-		For obtaining a pulse width signal, the compensated deviation is compared to a sawtooth waveform.
-		When the output of Ucomp is higher than the generated voltage GPWM, the output on Ucomp is high.
-		This changes the semiconductor into the Q into the conducting state until it is turned off due to the
-		Ucomp output being below the PWM generation voltage. Figure 1.4 already showed the waveforms
-		for a buck converter with a fixed duty cycle. With a feedback, the duty cycle D is automatically
-		adjusted to obtain a stable output voltage. An introduction on how the feedback is designed, is
-		presented in a later chapter.
-	</p>
-
-	<p> In contrast to an analog controlled SMPS, digital systems use microcontroller units (MCUs), digital
-		signal processors (DSPs) or field programmable gate arrays (FPGAs) to control the system. The
-		voltage and/or current is measured with a voltage divider and then digitized with an ADC converter. A timediscrete
-		feedback controller is applied inside the digital system and a PWM is generated on the
-		output. <q>If you are able to develop an analog feedback, you can do it digitally with a bit of embedded software skills.</q>
-		For the digital compensation we need some code <code>Digital Compensation</code>.
-	</p>
-
-	<p>
-		Using linebreak<br>
-		<pre>
-			And as typed
-						in html
-		 as it's typed
-		in html.
-		</pre>
-	</p>
-
-
-	<blockquote>
-	<p>The best is to use the least complex solution, even though engineers like to have fun with complex projects.</p>
-
-	<cite>Said by someone.</cite>
-	</blockquote>
-
-	<p> Here is a ordered list:	</p>
-	<ol>
-		<li> Item 1</li>
-		<li> Item 2</li>
-		<li> Item 3</li>
-	</ol>
-	
-	<p>Definition List:</p>
-	
-	<dl>
-		<dt>term</dt>
-			<dd>definition</dd>
-			<dd>additional definition</dd>
-		<dt>term 2</dt>
-			<dd>definition</dd>
-		<dt>term 3</dt>	
-			<dd>definition of term 3</dd>
-	</dl>
-
-	<button class = "clickme"> Click me! </button>
-	
-	<section class="hidden">
-		<h1> Look at that!</h1>
+	<main>
+		<p id="welcome-message">Welcome to my new <strong>Engineering Hustle</strong> page. This is a page I use for learing how to develop a webpage. 
+			In the future I might include a <em>technical blog about my projects</em> or cool animations.</p>
 		
-		<p>When clicked, a button will reveal this text.</p>
+		<p>	Don't expect a lot from it, since it is a testing space! </p>
+
+		<a href="https://www.youtube.com/@engineeringhustle">Youtube page!</a> 
 		
-		<p>Click again. and the text will hide!</p>
-	</section>
+		<br>
+		<br>
+		<!-- Don't use get on a real website! -->
+		<form action="success.html" method="get"> 
+			<label for="name">Name</label>
+			<input name="name" id="name" type="text">
+			<br>
+
+			<label for="email">Email</label>
+			<input name="email" id="email" type="email"
+			require placeholder="you@email.com">
+			<br>
+
+			<label for="password">Password</label>
+			<input name="password" id="password" type="password">
+			<br>
+
+			<label for="search">Search</label>
+			<input name="search" id="search" type="search">
+			<br>
+
+			<label for="phone number">Phone Number</label>
+			<input name="phone number" id="phone number" type="tel">
+			<br>
+
+			<label for="textarea">Text Area</label>
+			<textarea name="textarea" id="textarea"
+			cols="30" rows="15"></textarea>
+			<br>
+
+			<label for="date">Date</label>
+			<input name="date" id="date" type="date">
+			<br>
+
+			<label for="color">Color</label>
+			<input name="color" id="color" type="color">
+			<br>
+
+			<label for="file">File</label>
+			<input name="file" id="file" type="file"
+			accept="image/*" multiple>
+			<br>
+
+			<label for="checkbox">Checkbox</label>
+			<input name="simplecheckbox" id="checkbox" type="checkbox"
+			value="The checkbox is checked">
+			<br>
+
+			<fieldset>
+				<label for="selectlist">Choose one</label>
+				<select id="selectlist" name="selectlist">
+				  <option>First Option</option>
+				  <option>Second Choice</option>
+				  <option>Third Thing</option>
+				</select>
+			</fieldset>	
+							
+			<fieldset>
+			  <legend>Checkbox fields inside a fieldset</legend>
+				<input id="thischeck" name="checkboxlist" type="checkbox" value="This" checked >
+				<label for="thischeck">This</label>
+				<input id="orcheck" name="checkboxlist" type="checkbox" value="And Or">
+				<label for="orcheck">And/Or</label>
+				<input id="thatcheck" name="checkboxlist" type="checkbox" value="That">
+				<label for="thatcheck">That</label>
+			</fieldset>
+			
+			<fieldset>
+			  <legend>Radio button list inside a fieldset</legend>
+			  <input id="thisradio" name="radiobutton" type="radio" value="This" checked>
+			  <label for="thisradio">This</label>
+			  <input id="orradio" name="radiobutton" type="radio" value="Or">
+			  <label for="orradio">Or</label>
+			  <input id="thatradio" name="radiobutton" type="radio" value="That">
+			  <label for="thatradio">That</label>
+			</fieldset>
+			
+			<button type="submit">Sign up</button>
+			<br>
+
+		</form>
+
+		<article>
+			<p>Various power electronic topologies exist and the selection depends on different requirements
+			like:</p>
+
+			<ul>
+				<li>Input voltage</li>
+				<li>Output voltage</li>
+				<li>Power</li>
+				<li>Insulation</li>
+				<li>Size</li>
+				<li>EMC</li>
+				<li>Efficiency</li>
+				<li>Costs .</li>
+			</ul>
+
+			<section>
+
+				<h2> Control of SMPS</h2>
+				
+				<p> SMPS <em>require</em> the <i>output voltage</i> to be stable. <strong>High disturbances</strong>  and 
+					<strong>variations</strong> in the input voltage
+					and component tolerances should be <b>compensated</b>. Therefore, the output voltage is measured and
+					compensated. This feedback&nbsp;control needs to be designed properly, for obtaining a stable system.
+					Figure 1.6 shows a buck converter with a simplified analog voltage feedback control. The output
+					voltage is measured with a voltage divider Rf b<sub>1</sub> and Rf b2. It is compared to the reference voltage
+					Vre f with the usage of an operational amplifier and compensated with Rcomp, Ccomp1 and Ccomp<sup>2</sup>.
+					For obtaining a pulse width signal, the compensated deviation is compared to a sawtooth waveform.
+					When the output of Ucomp is higher than the generated voltage GPWM, the output on Ucomp is high.
+					This changes the semiconductor into the Q into the conducting state until it is turned off due to the
+					Ucomp output being below the PWM generation voltage. Figure 1.4 already showed the waveforms
+					for a buck converter with a fixed duty cycle. With a feedback, the duty cycle D is automatically
+					adjusted to obtain a stable output voltage. An introduction on how the feedback is designed, is
+					presented in a later chapter.
+				</p>
+			</section>
+
+			<figure>
+			<img src="Images/IdealBuckConverter.png" alt="Ideal Buck Converter" width="800" height="213">
+			<figcaption> Ideal Buck Converter </figcaption>
+			</figure>
+
+			<p> In contrast to an analog controlled SMPS, digital systems use microcontroller units (MCUs), digital
+				signal processors (DSPs) or field programmable gate arrays (FPGAs) to control the system. The
+				voltage and/or current is measured with a voltage divider and then digitized with an ADC converter. A timediscrete
+				feedback controller is applied inside the digital system and a PWM is generated on the
+				output. <q>If you are able to develop an analog feedback, you can do it digitally with a bit of embedded software skills.</q>
+				For the digital compensation we need some code <code>Digital Compensation</code>.
+			</p>
+		</article>
+
+		<p>
+			Using linebreak<br>
+			<pre>
+				And as typed
+							in html
+			as it's typed
+			in html.
+			</pre>
+		</p>
+
+
+		<blockquote>
+		<p>The best is to use the least complex solution, even though engineers like to have fun with complex projects.</p>
+
+		<cite>Said by someone.</cite>
+		</blockquote>
+
+		<!-- With contenteditable, the user can type something into this blockquote. -->
+		<blockquote contenteditable="true">
+			Write your favourite quote!
+		</blockquote>
+		<cite contenteditable="true"> Your name here </cite>
+
+		<div class="box">
+			<p> Here is a ordered list:	</p>
+		<ol>
+			<li> Item 1</li>
+			<li> Item 2</li>
+			<li> Item 3</li>
+		</ol>
+		</div>
+		
+		
+		<p>Definition List:</p>
+		
+		<dl>
+			<dt>term</dt>
+				<dd>definition</dd>
+				<dd>additional definition</dd>
+			<dt>term 2</dt>
+				<dd>definition</dd>
+			<dt>term 3</dt>	
+				<dd>definition of term 3</dd>
+		</dl>
+
+		<p> Symbols used for html programming are used &lt;, &gt; and &amp; </p>
+
+		<button class = "clickme"> Click me! </button>
+		
+		<section class="hidden">
+			<h1> Look at that!</h1>
+			
+			<p>When clicked, a button will reveal this text.</p>
+			
+			<p>Click again. and the text will hide!</p>
+		</section>
+
+		<br>
+		<br>
+		<br>
+
+
+		<!-- Different sized image depending on the browser's decision 
+		<img src="Images/Logo-very-small.png" alt="Logo"  width="2248" height="1152"
+		srcset = "	Images/Logo-small.png 2x,
+					Images/Logo.png 4x"
+		>
+		-->
+
+		<!-- Choose sizes dependent on view width
+		<img src="Images/Logo-very-small.png" alt="Logo"  width="2248" height="1152"
+		srcset = "	Images/Logo-very-small.png 281w,
+					Images/Logo-very-small.png 562w,
+					Images/Logo-small.png  1124w,
+					Images/Logo.png 2248w"
+		sizes="		(max-width: 480px) 281px,
+					(max-width: 960px) 562px,
+					(max-width: 1440px) 1124px,
+					2248px
+					"
+		>
+		-->
+
+		<picture>
+			<source media="(min-width:600px)" srcset="Images/IdealBuckConverter.png">
+			<source srcset="Images/Logo-small.png"> 
+			<img src="Images/Favicon.png" alt="Logo"  width="562" height="288">
+		</picture>
+
+		<br>
+		<audio controls loop src="Audio/EverybodyGetUpIntro.mp3"> </audio>
+
+		<!-- H.264 most used video codec, but not open source -->
+		<video src="Video/LogoZoomNew.mp4" controls width="320" height="240"> 
+			<!-- Use <track> element for subtitles and specify kind, label and srclang-->
+		</video>
+
+		<p> Embed a youtube video into this website! </p>
+		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wKMv13TqsCo?si=EsnV2hz7cO3XCbRX" 
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+		<table>
+			<tr>
+				<th>Test</th>
+				<th> the</th>
+				<th> Table</th>
+				<th>Functionality</th>
+			</tr>
+			<tr>
+				<td> American goldfish</td>
+				<td> yellow </td>
+				<td> Mostly seeds</td>
+				<td> <img src="Images/Favicon.png"> </td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+
+	</main>
+
+	<aside>
+		<!-- Stuff that goes into the sidebar -->
+	</aside>
 
 	<br>
-	<small>Copyright Engieering Hustle</small>
+	<footer>
+		<a href="/about/privacy">Privacy Policy</a>
+		<a href="/about/legal">Terms of Service</a>
+	</footer>
+	
+	<br>
+	<small> &copy; Engineering Hustle</small>
+
+	
 
 	<script src=script.js></script>
   </body>

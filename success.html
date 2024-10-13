@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US" dir="lrt">
+    <head>
+        <link rel="icon" type="image/png" href="Images/Favicon.png">
+        <meta charset="UTF-8">
+        <title>Engineering Hustle</title>
+    
+        <!-- Tells the browser that it is a responsive webpage fit for small and big screens -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <meat name="description" content="Test webpage for getting the skill of website design. See the real page in the future on engineeringhustle.com">
+    
+        <link rel="stylesheet" href="style.css">
+        <script src=script.js></script>
+    </head>
+    
+    <body>
+        
+        <h1>Success in signing up!</h1>
+
+        <p>You didn't actually sign up for anything, since I don't have anything to sign up for at the moment.</p>
+
+        <p>You used the following data for the input</p>
+        <p id="signup"> </p>
+
+        <script>
+			const resultsList = document.getElementById('signup')
+			new URLSearchParams(window.location.search).forEach((value,name) => {
+				resultsList.append(`${name}: ${value}`)
+				resultsList.append(document.createElement('br'))
+			})
+		</script>
+
+        <a href="index.html">Go back</a>
+
+    </body>
+
+
+
+</html>
