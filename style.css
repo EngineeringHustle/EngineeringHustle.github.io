@@ -36,7 +36,12 @@ button:hover {
 	*/
 	margin: 10px 20px 20px 10px;
 }
-
+/*
+body{
+	background-color: #ebefe6;
+	font-family: "Montserrat", serif;
+}
+*/
 h1{
 	color: #a8776c;
 }
@@ -46,6 +51,19 @@ p {
 	color: #687775;
 	text-align: justify;
 	/*text-indent: 2em;*/
+}
+
+/* Decended combinator*/
+article li {
+	color: #a8776c;
+}
+
+section p i{
+	color: #a8776c;
+}
+
+.large-text{
+	font-size: 26px;
 }
 
 
@@ -109,6 +127,14 @@ input[type="file"]:focus {
 
 input[type="checkbox"] {
 	width: min-content;
+}
+
+#welcome-message{
+	background-color: #ebefe6;
+}
+
+article p:first-of-type::first-letter {
+	color: red;
 }
 
 

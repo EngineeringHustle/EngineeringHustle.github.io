@@ -1,0 +1,262 @@
+
+
+/*div {
+    background: #687775;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #a8776c;
+    /*display: inline-block;*/
+/*}*/
+
+/*
+span{
+    background: #ebefe6;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    padding: 40px;
+    border: 4px solid black;
+    /*display: block;*/
+/*}*/
+
+@font-face {
+  font-family: "My Font";
+  src:  url("CooperHewitt-Medium.otf"), format("otf"); /*relative path to font file e.g. on fontsquirrel.com/tools/webfont-generator*/
+}
+
+
+.box-1{
+    box-sizing: content-box;
+    width: 140px;
+    height: 40px;
+    font-family: "My Font", Arial, Helvetica, sans-serif;
+}
+.box-2{
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 10px;
+    border: 5px solid pink;
+    margin-top: 50px;
+}
+
+p{
+    background: lightgreen;
+}
+
+span{
+    background: yellow;
+    font-size: 16px;
+}
+.container{
+    font-size: 0;
+}
+/*
+.close-gap{
+    margin-left: -4px;
+}
+    */
+
+.first-block{
+    margin-bottom: 0;
+}
+.second-block{
+    margin-top: 0;
+}
+
+hr{
+    margin: 10px;
+}
+
+section{
+    background: lightblue;
+    
+}
+
+.content-wrapper{
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+/*The position property*/
+
+.wrapper {
+    border: 1px solid black;
+  /*   position: relative; */
+  }
+  .parent {
+    border: 1px solid red;
+    position: relative; 
+  }
+  .relative { 
+    background: lightblue;
+     position: relative; 
+    /* top: 20px; */
+     bottom: 20px; 
+     right: 20px;
+     left: 20px; 
+  }
+  .absolute {
+    background: pink;
+     position: absolute; 
+     right: 25%; 
+     bottom: 5%; 
+  }
+  .fixed {
+    background: lightgreen;
+     position: fixed; 
+     top: 0; 
+    right: 0; 
+  }
+  .sticky {
+    background: lightgray;
+     position: sticky; 
+     top: 10px; 
+  }
+  
+  
+  /* 
+  Presentation styles. No changes 
+  are necessary for the exercise. */
+  .wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 300px;
+  }
+  .box {
+    width: 60px;
+    height: 50px; 
+    padding: 10px;
+  }
+  
+  
+  
+.block1 {
+    /*display: none;*/
+    background: pink;
+    position: relative;
+    z-index: 1;
+  }
+  .block2 {
+    /*display: none;*/
+    background: palevioletred;
+    margin: -60px 0 0 20px;
+  }
+  .float {
+    /*display: none;*/
+    background: lightblue;
+    float: left;
+    margin: -150px 0 0 100px;
+  }
+  .inline {
+    /*display: none;*/
+    background: blue;
+    color: white;
+    padding: 10px 40px 10px 10px;
+    position: relative;
+    z-index: 2;
+  }
+  .position {
+    /*display: none;*/
+    background: orange;
+    position: relative;
+    left: 180px;
+    top: -165px;
+    height: 110px;
+  }
+/*
+  div {
+    padding: 20px;
+    width: 200px;
+    height: 80px;
+    font-family: avenir, sans-serif;
+  }
+*/
+  .flexbox-exercise
+  {
+    margin: auto auto;
+  }
+  .flex-container {
+    background: powderblue;
+    border: 5px solid darkslategrey;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap; 
+    /*flex-direction: column; */
+  }
+  .flex-item {
+    border: 4px solid white;
+    padding: 10px;
+    /*flex: grow shrink bases */
+    flex: 1 0 100px; 
+   box-sizing: border-box; 
+  }
+  .item-1 {
+   flex-grow: 2; 
+  }
+
+
+  /* Aligning flex items*/
+  ul {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    /* justify-content: flex-start;  */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+  /*   justify-content: space-around; */
+    justify-content: space-evenly;
+    /* align-items: stretch; */
+    align-items: center;
+    align-items: flex-start;
+  /*   align-items: flex-end; */
+  }
+
+
+  ul {
+    background: powderblue;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 5px solid darkslategrey;
+  }
+  ul li {
+    border: 4px solid white;
+    padding: 10px;
+    margin: 0;
+  }
+
+
+  .grid-container {
+    border: 4px solid black;
+    width: 400px;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(3, 1fr);
+    /*Second row is sized as implicid grid*/
+    grid-template-rows: 200px;
+    grid-auto-rows: 100px;
+  }
+  .grid-item {
+    border: 2px solid mediumvioletred;
+    padding: 10px;
+  }
+
+
+  header{
+    font-weight: bold;
+  }
+
+  h2{
+    font-weight: 400;
+  }
+
+  em{
+    font-style: normal;
+  }
+
